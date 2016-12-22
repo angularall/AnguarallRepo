@@ -15,7 +15,10 @@
 				<div class="al-logo mdl-cell mdl-cell--3-col m m1 hidden">Angular ALL</div>
 				<div class="mdl-cell mdl-cell--3-col m m1">{{appName}}</div>
                 <div class="al-search mdl-cell mdl-cell--5-col m m2"><input class="search" type="text" value="search"/></div>
-				<div class="al-mega-menu mdl-cell mdl-cell--4-col m m3">Angular1 ||Angular2</div>
+				<div class="al-mega-menu mdl-cell mdl-cell--4-col m m3">
+					<span class="sa"><a class="a1">Angular1</a></span>
+					<span class="sa"><a class="a2">Angular2</a></span>
+				</div>
 				<span class="mdl-layout__title hidden">
 				    <span class="mdl-layout__title">Angular ALL</span>
                 </span>
@@ -33,14 +36,24 @@
 		<!-- Main-Start-->
 		<div class="mdl-layout__content al-cont">
             <div class="al-container mdl-grid">
-				<div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-				<div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--9-col">
+				
+				<div class="al-lmenu mdl-cell mdl-cell--2-col">
+					<p class="mdl-card__title-text" ng-repeat="a in temp">Blog template</p>
+				</div>
+				
+				<div class="al-content mdl-shadow--4dp mdl-color-text--grey-800 mdl-cell mdl-cell--9-col">
 					<div class="demo-crumbs mdl-color-text--grey-500">
 						Google &gt; Material Design Lite &gt; How to install MDL
 					</div>
-					<h3 ng-repeat="a in temp">How to install MDL{{a}}</h3>
-					<h3>How to install MDL</h3><h3>How to install MDL</h3><h3>How to install MDL</h3><h3>How to install MDL</h3><h3>How to install MDL</h3><h3>How to install MDL</h3>
+					<h5 ng-repeat="a in temp">How to install MDL{{a}}</h4>
 				</div>
+				
+				
+				<div class="al-r-area mdl-cell mdl-cell--1-col">
+					<p class="mdl-card__title-text" ng-repeat="a in temp">aliquip irure enim</p>
+				</div>
+				
+				
                 <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card hidden">
                     <div class="mdl-card__media">
                         <img class="article-image" src="../images/example-work01.jpg" border="0" alt="">
@@ -56,10 +69,24 @@
                     </div>
                 </div>
             </div>
-            
+        
+		
+		 <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">Angular ALl</div>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+            </footer>
+		
         </div>
 		<!-- Main-End-->
 		
+
 		
 	</div>
 </body>
