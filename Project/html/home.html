@@ -26,7 +26,7 @@
 				    <span class="mdl-layout__title">Angular ALL</span>
                 </span>
             </div>
-            <div class="mdl-layout__header-row al-navi-r mdl-layout--large-screen-only">
+            <div class="mdl-layout__header-row al-navi-r mdl-layout--large-screen-only hidden">
                 <div class="mdl-navigation mdl-typography--body-1-force-preferred-font">
                     <a class="mdl-navigation__link al-link is-active" href="#">JavaScript</a>
                     <a class="mdl-navigation__link al-link" href="#">DotScript</a>
@@ -39,21 +39,18 @@
 		<!-- Main-Start-->
 		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
 			<div class="mdl-layout__drawer">
-				<span class="mdl-layout-title">Title</span>
+				<span class="mdl-layout-title">ng-Directives</span>
 				<nav class="mdl-navigation">
-				  <a class="mdl-navigation__link" href="">Link</a>
-				  <a class="mdl-navigation__link" href="">Link</a>
-				  <a class="mdl-navigation__link" href="">Link</a>
-				  <a class="mdl-navigation__link" href="" ng-repeat="a in temp">Link</a>
+				  <a class="mdl-navigation__link" href="" ng-repeat="ngdir in alDirectives">{{ngdir}}</a>
 				</nav>
 			</div>
 			<div class="mdl-layout__content al-cont">
 					<div class="al-container mdl-grid">						
-						<div class="al-content mdl-shadow--2dp mdl-color-text--grey-800 mdl-cell mdl-cell--12-col">
+						<div class="al-content mdl-color-text--grey-800 mdl-cell mdl-cell--12-col">
 							<div class="demo-crumbs mdl-color-text--grey-500">
 								Google &gt; Material Design Lite &gt; How to install MDL
 							</div>
-							<p ng-repeat="a in temp">AngularJS is a JavaScript framework. It is a library written in JavaScript.AngularJS is distributed as a JavaScript file, and can be added to a web page with a script tag:</p>
+							The ngIf directive removes or recreates a portion of the DOM tree based on an {expression}. If the expression assigned to ngIf evaluates to a false value then the element is removed from the DOM, otherwise a clone of the element is reinserted into the DOM.ngIf differs from ngShow and ngHide in that ngIf completely removes and recreates the element in the DOM rather than changing its visibility via the display css property. A common case when this difference is significant is when using css selectors that rely on an element's position within the DOM, such as the :first-child or :last-child pseudo-classes.Note that when an element is removed using ngIf its scope is destroyed and a new scope is created when the element is restored. The scope created within ngIf inherits from its parent scope using prototypal inheritance. An important implication of this is if ngModel is used within ngIf to bind to a javascript primitive defined in the parent scope. In this case any modifications made to the variable within the child scope will override (hide) the value in the parent scope.Also, ngIf recreates elements using their compiled state. An example of this behavior is if an element's class attribute is directly modified after it's compiled, using something like jQuery's .addClass() method, and the element is later removed. When ngIf recreates the element the added class will be lost because the original compiled state is used to regenerate the element.Additionally, you can provide animations via the ngAnimate module to animate the enter and leave effects.Directive InfoThis directive creates new scope.This directive executes at priority level 600.This directive can be used as multiElement						
 						</div>
 						
 						
